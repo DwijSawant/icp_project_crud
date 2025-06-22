@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "icp_project_crud_backend": {
+      "candid": "src/icp_project_crud_backend/icp_project_crud_backend.did",
+      "package": "icp_project_crud_backend",
+      "type": "rust"
+    },
+    "icp_project_crud_frontend": {
+      "dependencies": [
+        "icp_project_crud_backend"
+      ],
+      "source": [
+        "src/icp_project_crud_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icp_project_crud_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
+

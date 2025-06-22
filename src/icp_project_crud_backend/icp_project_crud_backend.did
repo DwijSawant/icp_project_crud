@@ -1,0 +1,24 @@
+type Student = record {
+  id: nat64;
+  name: text;
+  total_marks: nat64;
+  total_subjects: nat64;
+  grade: opt text;
+  average: opt float64;
+};
+
+service : {
+  create_student : (text, nat64, nat64) -> (nat64);
+  calculate_student_stats : (nat64) -> (opt record { float64; text });
+  get_average_marks :  (nat64) -> (opt float64);
+  get_grade :  (nat64) -> (opt text);
+  get_student_count :  () -> (nat64);
+  get_student_stats :  (nat64) -> (opt record {
+    id: nat64;
+    name: text;
+    total_marks: nat64;
+    total_subjects: nat64;
+    grade: opt text;
+    average: opt float64;
+  });
+};

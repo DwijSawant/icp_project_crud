@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 0.5rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #1c87c9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #155a8a;
+}
+
+.card {
+  background: #eef;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
